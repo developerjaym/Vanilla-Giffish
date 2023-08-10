@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "GeoSansLight";
+  src: url("https://localstorage.tools/game/font/GeosansLight.ttf");
+}
+
+:root {
+  color-scheme: light dark;
+  --wide: 12px;
+  --narrow: 4px;
+  --radius: 4px;
+
+  --happy-bg: #88a73f;
+  --happy-fg: black;
+  --sad-bg: #A73F54;
+  --sad-fg: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  font-family: "GeoSansLight", sans-serif;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: var(--narrow);
+}
+
+.button--icon {
+  padding: var(--wide);
+  border-radius: 100%;
+  border: none;
+  background: transparent;
+}
+
+.dialog .button--icon {
+  font-size: 24px;
+}
+
+.game__header .button--icon {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.header__text {
+  margin: var(--narrow);
+}
+
+.button--icon svg path {
+  fill: fieldtext;
+}
+
+#gifs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+}
+
+.game__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: var(--wide);
+  padding: var(--wide);
+  align-self: stretch;
+
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: fieldtext;
+}
+
+.game__main {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--wide);
+  align-items: center;
+
+  max-width: 80rem;
+}
+
+.gif {
+  width: 50%;
+}
+
+section {
+  padding: var(--narrow);
+}
+
+#previousGuesses {
+  display: flex;
+  padding: var(--wide);
+  column-gap: var(--narrow);
+}
+
+.guess-container {
+  display: flex;
+  column-gap: var(--narrow);
+  padding: var(--narrow);
+  border-radius: var(--radius);
+}
+
+.guess--right {
+  background-color: var(--happy-bg);
+  color: var(--happy-fg);
+}
+
+.guess--wrong {
+  background-color: var(--sad-bg);
+  color: var(--sad-fg);
+}
+
+#guessInput {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--wide);
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--narrow);
+}
+
+.dialog {
+  border-radius: var(--radius);
+  border-width: 1px;
+  padding: var(--narrow);
+}
+
+.dialog__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--narrow);
+  row-gap: var(--narrow);
+}
+
+.dialog__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog__header h2 {
+  margin: var(--narrow);
+}
+
+.dialog__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--narrow);
+}
+
+#about .dialog__body p {
+  margin: var(--narrow);
+}
+
+#about .dialog__body ul {
+  margin-top: var(--narrow);
+}
+
+#copyableResults {
+  height: 6rem;
+  width: 15rem;
+  border: none;
+  padding: var(--wide);
+}
+
+#loading {
+  height: 100vh;
+  width: 100vw;
+  border: none;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.loading__body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spin {
+    animation: spin 1s infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giffish</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="game">
+    <header class="game__header">
+        <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="36"
+            alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+        <h1 class="header__text">Giffish</h1>
+        <div class="header__options">
+            <button title="Share your results with your friends" class="button button--icon button--share"
+                id="headerShareButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M5 7c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5zm11.122 12.065c-.073.301-.122.611-.122.935 0 2.209 1.791 4 4 4s4-1.791 4-4-1.791-4-4-4c-1.165 0-2.204.506-2.935 1.301l-5.488-2.927c-.23.636-.549 1.229-.943 1.764l5.488 2.927zm7.878-15.065c0-2.209-1.791-4-4-4s-4 1.791-4 4c0 .324.049.634.122.935l-5.488 2.927c.395.535.713 1.127.943 1.764l5.488-2.927c.731.795 1.77 1.301 2.935 1.301 2.209 0 4-1.791 4-4z">
+                    </path>
+                </svg>
+            </button>
+            <button id="headerAboutButton" title="Learn more about the game" class="button button--icon">
+                ?
+            </button>
+        </div>
+    </header>
+    <main class="game__main">
+        <section id="gifs">
+        </section>
+        <section id="previousGuesses">
+
+        </section>
+        <section id="guessInput">
+            <form id="guessForm">
+                <label>
+                    <span>Guess the movie I'm thinking of</span>
+                    <input list="moviesList" type="text" name="guess" minlength="1" required>
+                    <datalist id="moviesList">
+
+                    </datalist>
+                </label>
+                <button class="button button--submit">Submit Guess</button>
+            </form>
+        </section>
+    </main>
+    <dialog id="loading" class="dialog">
+        <div class="loading__body">
+            <h1>Loading...</h1>
+            <img class="loading__icon spin" src="https://localstorage.tools/logo_256px.png" height="24"
+                alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+        </div>
+    </dialog>
+    <dialog id="results" class="dialog">
+        <div class="dialog__container">
+            <header class="dialog__header">
+                <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="24"
+                    alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+                <h2>Results</h2>
+                <button class="button button--icon button--close" title="Close dialog">✗</button>
+            </header>
+            <div class="dialog__body">
+                <textarea disabled id="copyableResults"></textarea>
+                <button id="resultsCopyButton" title="Copy your results for today to your device's clipboard">Copy to
+                    Clipboard</button>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="about" class="dialog">
+        <div class="dialog__container">
+            <header class="dialog__header">
+                <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="24"
+                    alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+                <h2>About</h2>
+                <button class="button button--icon button--close" title="Close dialog">✗</button>
+            </header>
+            <div class="dialog__body">
+                <p>Welcome to Giffish!</p>
+                <ul>
+                    <li>You'll see a combination of clever GIF clues.</li>
+                    <li>Your task is to
+                        guess the movie they hint at.</li>
+                        <li>
+                            But remember, the GIFs aren't scenes from the movie itself.
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </dialog>
+</body>
+
+</html>
