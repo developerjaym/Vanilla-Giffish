@@ -42,7 +42,7 @@ class ResultsDialog {
   }
   #convertResultsToString(gameData) {
     const guesses = gameData.guesses;
-    return `#Giffish #Giffish_${gameData.date}\n${
+    return `#Giffish #Giffish_${gameData.date.replaceAll("-", "_")}\n${
       guesses.some((guessObj) => guessObj.result) ? "WINNER" : "LOSER"
     }\n${guesses
       .map(({ result }) => (result ? " 🟩" : " ⬛"))

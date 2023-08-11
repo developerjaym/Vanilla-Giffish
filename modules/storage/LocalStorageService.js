@@ -4,7 +4,7 @@ export default class LocalStorageService extends StorageService {
     #key
     constructor() {
         super()
-        this.#key = "TEST-giffish"
+        this.#key = "giffish"
     }
     async save(data) {
         const stats = await this.read()
