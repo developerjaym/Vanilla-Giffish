@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#000000">
     <meta name="keywords" content="game, Giffish" />
     <meta name="author" content="developerjaym" />
     <meta
@@ -12,7 +14,7 @@
     />
     <meta
       property="og:image"
-      content="https://localstorage.tools/squareswhitebackground.jpg"
+      content="./icons/og.png"
     />
     <meta property="og:image:width" content="512" />
     <meta properly="og:image:height" content="512" />
@@ -26,17 +28,22 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://localstorage.tools/logo_512px_square.png"
+      href="./icons/favicon.ico"
     />
     <title>Giffish</title>
     <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js', { scope: './' })
+        }
+    </script>
 </head>
 
 <body id="game">
     <header class="game__header">
-        <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="36"
-            alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+        <img class="header__logo" src="./icons/logo.png" height="36"
+            alt="Logo of a grid of 4 squares of green, yellow, yellow, and purple.">
         <h1 class="header__text">Giffish</h1>
         <div class="header__options">
             <button title="Share your results with your friends" class="button button--icon button--share"
@@ -75,15 +82,15 @@
     <dialog id="loading" class="dialog">
         <div class="loading__body">
             <h1>Loading...</h1>
-            <img class="loading__icon spin" src="https://localstorage.tools/logo_256px.png" height="24"
-                alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+            <img class="loading__icon spin" src="./icons/logo.png" height="24"
+                alt="Logo of a grid of 4 squares of green, yellow, yellow, and purple.">
         </div>
     </dialog>
     <dialog id="results" class="dialog">
         <div class="dialog__container">
             <header class="dialog__header">
-                <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="24"
-                    alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+                <img class="header__logo" src="./icons/logo.png" height="24"
+                    alt="Logo of a grid of 4 squares of green, yellow, yellow, and purple.">
                 <h2>Results</h2>
                 <button class="button button--icon button--close" title="Close dialog">X</button>
             </header>
@@ -98,8 +105,8 @@
     <dialog id="about" class="dialog">
         <div class="dialog__container">
             <header class="dialog__header">
-                <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="24"
-                    alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
+                <img class="header__logo" src="./icons/logo.png" height="24"
+                    alt="Logo of a grid of 4 squares of green, yellow, yellow, and purple.">
                 <h2>About</h2>
                 <button class="button button--icon button--close" title="Close dialog">X</button>
             </header>
