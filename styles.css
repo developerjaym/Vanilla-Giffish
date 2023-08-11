@@ -49,6 +49,7 @@ body {
 
 .header__text {
   margin: var(--narrow);
+  margin-right: auto;
 }
 
 .button--icon svg path {
