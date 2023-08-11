@@ -1,7 +1,7 @@
 export default function (str, justWhitespace = false) {
+    str = str.toLowerCase()
     if(!justWhitespace) {
 
-        str = str.toLowerCase()
         let articleRegex = /(\bthe\b)|(\ba\b)|(\ban\b)/gi
         str = str.replaceAll(articleRegex, "")
         
