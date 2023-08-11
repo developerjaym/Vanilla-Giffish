@@ -9,8 +9,11 @@ export default class MovieService {
         const response = await fetch(this.#gameMoviesUrl)
         return await response.json()
     }
-    async getAllMovies() {
+    async getAllMovies(additionalMovies = []) {
         const response = await fetch(this.#allMoviesUrl)
-        return await response.json()
+        const arr = await response.json()
+        const movies = Array.from(new Set(arr.concat(additionalMovies)))
+        movies.sort()
+        return movies
     }
 }

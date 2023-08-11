@@ -1,5 +1,6 @@
 import { LocalDate } from "../date/LocalDate.js";
 import { Observable } from "../utility/Observable.js";
+import compare from "./guessCompare.js";
 
 
 const rules = Object.freeze({
@@ -18,6 +19,7 @@ export class GameEventType {
         return "END"
     }
 }
+
 
 export class GameService extends Observable {
   #dateService;
@@ -42,6 +44,7 @@ export class GameService extends Observable {
   start() {
     this.notifyAll({type: GameEventType.START, data: this.#state})
     if(this.#state.guesses.some(guess => guess.result) || this.#state.guesses.length === rules.maxGuesses) {
+        this.#state.isDone = true
         this.notifyAll({type: GameEventType.END, data: this.#state})
     }
   }
@@ -51,11 +54,12 @@ export class GameService extends Observable {
   }
 
   judge(guess) {
-    const result = guess === this.movie.title
+    const result = compare(guess, this.movie.title)
     const guessObject = {guess, result}
     this.#state.guesses.push(guessObject)
     this.notifyAll({type: GameEventType.GUESS, data: this.#state})
     if(this.#state.guesses.length === rules.maxGuesses || result) {
+        this.#state.isDone = true
         this.notifyAll({type: GameEventType.END, data: this.#state})
     }
   }

@@ -38,6 +38,9 @@ class ResultsDialog {
     this.#results = gameData;
     this.#element.querySelector("#copyableResults").textContent =
       this.#convertResultsToString(this.#results);
+    if(gameData.isDone) {
+        this.#element.querySelector("#resultsAnswer").textContent = gameData.movie.title
+    }
     this.#element.showModal();
   }
   #convertResultsToString(gameData) {
@@ -87,6 +90,7 @@ class GameView {
       .addEventListener("click", () =>
         this.#element.querySelector("#about").showModal()
       );
+      this.#element.querySelector("#refreshButton").addEventListener("click", () => location.reload())
   }
   onChange(event) {
     this.#mostRecentEvent = event;
@@ -106,6 +110,8 @@ class GameView {
       case GameEventType.END:
         this.#displayGuesses(event.data.guesses);
         this.#resultsDialog.show(event.data);
+        this.#element.querySelector("#guessForm").classList.add("hidden")
+        this.#element.querySelector("#refreshButton").classList.remove("hidden")
         Array.from(this.#element.querySelector("#guessForm").elements).forEach(
           (formElement) => (formElement.disabled = true)
         );
@@ -142,7 +148,6 @@ class GameView {
   #createDatalistOption(title) {
     const option = document.createElement("option");
     option.value = title;
-    option.textContent = title;
     return option;
   }
   #createImage({ src, alt }) {
@@ -164,7 +169,7 @@ class GameComponent {
   async #prep(dateService, storageService, movieService) {
     const movies = await movieService.read();
     const userData = await storageService.read();
-    const allMovies = await movieService.getAllMovies();
+    const allMovies = await movieService.getAllMovies(movies.map(movie => movie.title));
 
     const model = new GameService(dateService, movies, userData);
     const controller = new GameController(model);

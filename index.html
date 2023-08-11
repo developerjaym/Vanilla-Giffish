@@ -69,6 +69,7 @@
                 </label>
                 <button class="button button--submit">Submit Guess</button>
             </form>
+            <button id="refreshButton" title="Reload this web page" class="hidden">🔄 Refresh</button>
         </section>
     </main>
     <dialog id="loading" class="dialog">
@@ -84,9 +85,10 @@
                 <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="24"
                     alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
                 <h2>Results</h2>
-                <button class="button button--icon button--close" title="Close dialog">✗</button>
+                <button class="button button--icon button--close" title="Close dialog">X</button>
             </header>
             <div class="dialog__body">
+                <p>The answer was <span id="resultsAnswer"></span></p>
                 <textarea disabled id="copyableResults"></textarea>
                 <button id="resultsCopyButton" title="Copy your results for today to your device's clipboard">Copy to
                     Clipboard</button>
@@ -99,7 +101,7 @@
                 <img class="header__logo" src="https://localstorage.tools/logo_256px.png" height="24"
                     alt="Logo of overlapping green, yellow, and purple squares turned 45 degrees.">
                 <h2>About</h2>
-                <button class="button button--icon button--close" title="Close dialog">✗</button>
+                <button class="button button--icon button--close" title="Close dialog">X</button>
             </header>
             <div class="dialog__body">
                 <p>Welcome to Giffish!</p>
