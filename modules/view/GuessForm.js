@@ -50,8 +50,13 @@ export default class GuessForm {
           //  limited to X number of options, for performance reasons
           //  IF ios Safari ever supports datalist as nicely as Android Chrome
           //  THEN just display ALL options ALL the time
-          this.#element.querySelector("#moviesList").replaceChildren(...this.#allOptions.filter(option => option.dataset.normalized.includes(normalize(inputValue,))).filter((o, index) => index < GuessForm.DATALIST_LIMIT))
+          const matchingOptions = this.#findMatchingOptions(inputValue)
+          this.#element.querySelector("#moviesList").replaceChildren(...matchingOptions.filter((o, index) => index < GuessForm.DATALIST_LIMIT))
           
       })
+    }
+    #findMatchingOptions(inputValue) {
+      let normalizedInput = normalize(inputValue, true)
+      return this.#allOptions.filter(option => option.dataset.normalized.includes(normalizedInput))
     }
   }
