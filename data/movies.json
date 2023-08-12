@@ -254,7 +254,7 @@
       ]
     },
     {
-      "title": "The Dark Knight Rises",
+      "title": "The Dark Knight",
       "gifs": [
         {
           "src": "https://media.giphy.com/media/USUVeQ75k5jRC5zV6E/giphy.gif",
@@ -267,10 +267,6 @@
         {
           "src": "https://media.giphy.com/media/p2PoRL1YVjh31Pnyj6/giphy.gif",
           "alt": "The moon at night"
-        },
-        {
-          "src": "https://media.giphy.com/media/26zzni2uTPRVJWt7W/giphy.gif",
-          "alt": "A vampire rising"
         }
       ]
     },
@@ -278,12 +274,12 @@
       "title": "Joker",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/Bng9nsAhSaDVxWsSLh/giphy.gif",
+          "alt": "A drummer playing a ba-dum-tss"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/NrqPPuOqcVVZu/giphy.gif",
+          "alt": "A young George Clooney in doctor clothes in a hospital"
         }
       ]
     },
@@ -291,25 +287,16 @@
       "title": "Alice in Wonderland",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/fYMkDXTsnf5de/giphy.gif",
+          "alt": "The maid from the Brady Bunch looking longingly at ice cream"
         },
         {
-          "src": "",
-          "alt": ""
-        }
-      ]
-    },
-    {
-      "title": "The Dark Knight",
-      "gifs": [
-        {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/XGn6xLsliW1dLnQY92/giphy.gif",
+          "alt": "Wonder Woman chasing something past cars"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/g5wOJf9QumTny/giphy.gif",
+          "alt": "A Southwest jet landing on a runway"
         }
       ]
     },
@@ -317,12 +304,12 @@
       "title": "Harry Potter",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/RKQ1SyznJLt5u/giphy.gif",
+          "alt": "A man getting his hairy chest waxed"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/2ppoYU9s6mvW8/giphy.gif",
+          "alt": "The scene from Ghost with the pottery"
         }
       ]
     },
