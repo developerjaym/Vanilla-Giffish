@@ -13,6 +13,8 @@
   --happy-fg: black;
   --sad-bg: #A73F54;
   --sad-fg: white;
+
+  --max-main-width: 80rem;
 }
 
 body {
@@ -60,8 +62,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-wrap: wrap;
   background-color: black;
+  row-gap: var(--narrow);
+  column-gap: var(--narrow);
+}
+
+.gif {
+  width: calc(50% - var(--narrow));
+  max-width: calc((var(--max-main-width) / 3) - var(--wide));
 }
 
 .game__header {
@@ -69,7 +78,7 @@ body {
   align-items: center;
   justify-content: space-between;
   column-gap: var(--wide);
-  padding: var(--wide);
+  padding: var(--narrow) var(--wide);
   align-self: stretch;
 
   border-style: solid;
@@ -83,12 +92,10 @@ body {
   row-gap: var(--wide);
   align-items: center;
 
-  max-width: 80rem;
+  max-width: var(--max-main-width);
 }
 
-.gif {
-  width: 50%;
-}
+
 
 section {
   padding: var(--narrow);
