@@ -16,7 +16,7 @@ export default class MovieService {
         }
         const response = await fetch(this.#gameMoviesUrl)
         this.#gameMovies = await response.json()
-        return this.#gameMovies
+        return this.#gameMovies.filter(movie => movie.gifs.every(gif => gif.src && gif.alt))
     }
     async getAllMovies() {
         if(this.#allMovies.length) {
