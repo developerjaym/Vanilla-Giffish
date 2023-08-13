@@ -317,12 +317,12 @@
       "title": "The Jungle Book",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/Pheu6uCOwK27c99jL5/giphy.gif",
+          "alt": "A rainforest with fog rising from the trees"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/3kD2Eciolhy4VOzjRV/giphy.gif",
+          "alt": "A bearded man staring opening a book and a bright golden light shooting out"
         }
       ]
     },
@@ -343,25 +343,29 @@
       "title": "The Lord of the Rings",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/6C63jZjeLijCfwGvbY/giphy.gif",
+          "alt": "A cross in front of a sunrise with text that says, 'He is Risen: Matthew 28:5-6'"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/l3q2Dfw5Ccz1LIDpC/giphy.gif",
+          "alt": "An athlete holding up his hands to display his many championship rings"
         }
       ]
     },
     {
-      "title": "Spider-Man",
+      "title": "Superman",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/f60tgCAj8D07VvpT76/giphy.gif",
+          "alt": "Soup Nazi from Seinfeld saying 'No soup for you'"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/MhHLb0MGIkDFGzCeyE/giphy.gif",
+          "alt": "A man in old-fashioned Asian garb looking confused with the text, 'ERR...'"
+        },
+        {
+          "src": "https://media.giphy.com/media/ET574eBoMcP9C/giphy.gif",
+          "alt": "Leslie Mann complaining that something isn't turning out the way she wanted"
         }
       ]
     },
@@ -369,12 +373,12 @@
       "title": "Star Wars",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/13upfk8AyiPrdC/giphy.gif",
+          "alt": "A star trying to wake up Kirby"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/lDifyB9R0iqWoDZoIT/giphy.gif",
+          "alt": "A scene from the Allied Invasion of Normandy"
         }
       ]
     },
@@ -382,17 +386,243 @@
       "title": "The Hunger Games",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/DPtj3FaOaENO0/giphy.gif",
+          "alt": "William Hung singing and dancing 'She Bangs' on American Idol"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/l0MYNTkOzbaY2qnjW/giphy.gif",
+          "alt": "Bambi saying, 'Grrrrr.'"
+        },
+        {
+          "src": "https://media.giphy.com/media/7vAf5vifeiso456vrK/giphy.gif",
+          "alt": "A couple of people holding up a board games"
         }
       ]
     },
     {
       "title": "Guardians of the Galaxy",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/SWkGtcAKXkL3W7uMZW/giphy.gif",
+          "alt": "A player from the MLB Guardians team doing a gesture like he is carrying a baby"
+        },
+        {
+          "src": "https://media.giphy.com/media/D35fOVm9gSQ91icJeR/giphy.gif",
+          "alt": "A spiral galaxy"
+        }
+      ]
+    },
+    {
+      "title": "Pulp Fiction",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/KJ8nQLWsPJYv37oQgo/giphy.gif",
+          "alt": "Someone pouring a bottle of orange juice next to a couple slices of orange"
+        },
+        {
+          "src": "https://media.giphy.com/media/7SKUx7FY83GEMk9t08/giphy.gif",
+          "alt": "A series of popular novels"
+        }
+      ]
+    },
+    {
+      "title": "Friday",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/ANbD1CCdA3iI8/giphy.gif",
+          "alt": "The main character from Futurama squinting"
+        },
+        {
+          "src": "https://media.giphy.com/media/RURAojdRlmGvm/giphy.gif",
+          "alt": "Charlie from It's Always Sunny in Philadelphia asking about spaghetti policy"
+        }
+      ]
+    },
+    {
+      "title": "Boogie Nights",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/5HRvXqKEVrZEA/giphy.gif",
+          "alt": "A gorilla picking its nose and then eating its findings while another gorilla watches"
+        },
+        {
+          "src": "https://media.giphy.com/media/WRRZgIFWVaB0I/giphy.gif",
+          "alt": "Monty Python and the Holy Grail knights dancing in Camelot"
+        }
+      ]
+    },
+    {
+      "title": "The Royal Tenenbaums",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/3o7btXkbsV26U95Uly/giphy.gif",
+          "alt": "A European-style coronation of a man"
+        },
+        {
+          "src": "https://media.giphy.com/media/rzYzG31xTBFSELyGof/giphy.gif",
+          "alt": "Penguin judges holding up 10s"
+        },
+        {
+          "src": "https://media.giphy.com/media/KzKXmxsMue4CSxzYBK/giphy.gif",
+          "alt": "A B-2 releasing a lot of bombs"
+        }
+      ]
+    },
+    {
+      "title": "Pineapple Express",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/VLuEi3ijz0wrC/giphy.gif",
+          "alt": "A pineapple getting cored while an animated face on it screams"
+        },
+        {
+          "src": "https://media.giphy.com/media/uhy2fnDYJK2R2/giphy.gif",
+          "alt": "Home Simpson drinking a shot of espresso"
+        }
+      ]
+    },
+    {
+      "title": "Do the Right Thing",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/iGvSHHshgwcfxghgI9/giphy.gif",
+          "alt": "Shining-style advertisement for Mountain Dew Zero"
+        },
+        {
+          "src": "https://media.giphy.com/media/jeXiz1RAvzX44/giphy.gif",
+          "alt": "Dr Evil saying, 'Right...'"
+        },
+        {
+          "src": "https://media.giphy.com/media/6hhqGnU2V3wIw/giphy.gif",
+          "alt": "The stony guy from Fantastic Four"
+        }
+      ]
+    },
+    {
+      "title": "Oppenheimer",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/dYQfIcryc28bS6132z/giphy.gif",
+          "alt": "A white animated door opening"
+        },
+        {
+          "src": "https://media.giphy.com/media/fdHg7T902uzLy/giphy.gif",
+          "alt": "Homer Simpson driving a car while looking real relaxed with red eyes and a colorful sky behind him"
+        },
+        {
+          "src": "https://media.giphy.com/media/S0DUkRtx4eG174fDAQ/giphy.gif",
+          "alt": "The weasel-looking fellow from Impractical Jokers showing off his muscles"
+        }
+      ]
+    },
+    {
+      "title": "The Aristocats",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/bx7Gfd9mfo6Sji7lwy/giphy.gif",
+          "alt": "A man holding up his hand and wrist and then grabbing his wrist while talking"
+        },
+        {
+          "src": "https://media.giphy.com/media/tMPSeKEplOfK0/giphy.gif",
+          "alt": "A man comedically recognizing something and mouthing, 'Oh...'"
+        },
+        {
+          "src": "https://media.giphy.com/media/9gISqB3tncMmY/giphy.gif",
+          "alt": "A couple of cats in a lightsaber duel"
+        }
+      ]
+    },
+    {
+      "title": "Rocky",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/hSSmuw4kdO88ECmODl/giphy.gif",
+          "alt": "A bunch of rocks getting picked up by a construction truck"
+        },
+        {
+          "src": "https://media.giphy.com/media/10mc8e84XlgQtAt6CZ/giphy.gif",
+          "alt": "A strange person gesturing strangely while saying, 'EEEEE'"
+        }
+      ]
+    },
+    {
+      "title": "The Incredible Hulk",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/nvUQdK0AVjLqmuHgP5/giphy.gif",
+          "alt": "Chris Pratt with ink on his lips"
+        },
+        {
+          "src": "https://media.giphy.com/media/3o85xBy0wWCA7ql1ok/giphy.gif",
+          "alt": "A remote controlled car with Donkey Kong driving through a pyramid of Red Bull cans"
+        },
+        {
+          "src": "https://media.giphy.com/media/3OzmcOUXM3Kw0/giphy.gif",
+          "alt": "John Travolta of Pulp Fiction looking around a hallway"
+        },
+        {
+          "src": "https://media.giphy.com/media/En7ButN65wRws/giphy.gif",
+          "alt": "A man with a goofy face saying, 'K'"
+        }
+      ]
+    },
+    {
+      "title": "The Patriot",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/LFvimMqNRFgDIUIgKK/giphy.gif",
+          "alt": "Someone giving money to someone else"
+        },
+        {
+          "src": "https://media.giphy.com/media/HwXj1VRf9BJ04/giphy.gif",
+          "alt": "A tree dancing with a beer in one hand and a cigarette in another"
+        },
+        {
+          "src": "https://media.giphy.com/media/xT9IgvEOwRzUcZDRiU/giphy.gif",
+          "alt": "The clown from that scary Stephen King book"
+        }
+      ]
+    },
+    {
+      "title": "Castaway",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/l0MYurb5ilZl6ageI/giphy.gif",
+          "alt": "A man having a cast removed and revealing some weird stuff"
+        },
+        {
+          "src": "https://media.giphy.com/media/mRlMSo4G0fQSzDP5xY/giphy.gif",
+          "alt": "Alf saying, 'Uhhh'"
+        },
+        {
+          "src": "https://media.giphy.com/media/TwbhOUKffnesE/giphy.gif",
+          "alt": "Guy from Wayne's World saying, 'No Way'"
+        }
+      ]
+    },
+    {
+      "title": "My Neighbor Totoro",
+      "gifs": [
+        {
+          "src": "https://media.giphy.com/media/L13XwdbGcRVeNMGlzB/giphy.gif",
+          "alt": "Daniel Tiger asking if you'll be his neighbor"
+        },
+        {
+          "src": "https://media.giphy.com/media/o3eAOq9tTFznq/giphy.gif",
+          "alt": "A toe with a smily face"
+        },
+        {
+          "src": "https://media.giphy.com/media/YIbq4Z0qheFvBcSr5h/giphy.gif",
+          "alt": ""
+        },
+        {
+          "src": "https://media.giphy.com/media/7nXMnkcsTi1wGtPNxT/giphy.gif",
+          "alt": "Some pandas rowing dragon boats"
+        }
+      ]
+    },
+    {
+      "title": "",
       "gifs": [
         {
           "src": "",
@@ -405,7 +635,98 @@
       ]
     },
     {
-      "title": "Wonder Woman",
+      "title": "",
+      "gifs": [
+        {
+          "src": "",
+          "alt": ""
+        },
+        {
+          "src": "",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "gifs": [
+        {
+          "src": "",
+          "alt": ""
+        },
+        {
+          "src": "",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "gifs": [
+        {
+          "src": "",
+          "alt": ""
+        },
+        {
+          "src": "",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "gifs": [
+        {
+          "src": "",
+          "alt": ""
+        },
+        {
+          "src": "",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "gifs": [
+        {
+          "src": "",
+          "alt": ""
+        },
+        {
+          "src": "",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "gifs": [
+        {
+          "src": "",
+          "alt": ""
+        },
+        {
+          "src": "",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "gifs": [
+        {
+          "src": "",
+          "alt": ""
+        },
+        {
+          "src": "",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "title": "",
       "gifs": [
         {
           "src": "",

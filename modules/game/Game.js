@@ -4,7 +4,7 @@ import compare from "./guessCompare.js";
 
 
 const rules = Object.freeze({
-    "maxGuesses": 3,
+    "maxGuesses": 6,
 
 })
 
