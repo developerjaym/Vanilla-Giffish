@@ -340,7 +340,7 @@
       ]
     },
     {
-      "title": "The Lord of the Rings",
+      "title": "The Lord of the Rings: The Two Towers",
       "gifs": [
         {
           "src": "https://media.giphy.com/media/6C63jZjeLijCfwGvbY/giphy.gif",
@@ -349,6 +349,10 @@
         {
           "src": "https://media.giphy.com/media/l3q2Dfw5Ccz1LIDpC/giphy.gif",
           "alt": "An athlete holding up his hands to display his many championship rings"
+        },
+        {
+          "src": "https://media.giphy.com/media/3o6ozgxHAssXP6oCe4/giphy.gif",
+          "alt": "The Petronas Towers"
         }
       ]
     },
@@ -622,15 +626,15 @@
       ]
     },
     {
-      "title": "",
+      "title": "Home Alone",
       "gifs": [
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/fJ8fTR9ZKYj2o/giphy.gif",
+          "alt": "An animated house"
         },
         {
-          "src": "",
-          "alt": ""
+          "src": "https://media.giphy.com/media/VfyC5j7sR4cso/giphy.gif",
+          "alt": "Milhouse from the Simpsons throwing a frisbee all alone in the park"
         }
       ]
     },
