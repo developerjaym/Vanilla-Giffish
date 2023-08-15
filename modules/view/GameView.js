@@ -1,7 +1,7 @@
 import { GameEventType } from "../game/Game.js";
+import injector from "../utility/Dependencies.js";
 import GuessForm from "./GuessForm.js";
 import ResultsDialog from "./ResultsDialog.js";
-
 
 export default class GameView {
   #element;
@@ -9,10 +9,10 @@ export default class GameView {
   #resultsDialog;
   #mostRecentEvent;
   #form;
-  constructor(element, controller) {
+  constructor(element, controller, dateService = injector.dateService) {
     this.#element = element;
     this.#mostRecentEvent = null;
-    
+
     this.#controller = controller;
     this.#resultsDialog = new ResultsDialog(
       this.#element.querySelector("#results")
@@ -39,6 +39,16 @@ export default class GameView {
     this.#element
       .querySelector("#refreshButton")
       .addEventListener("click", () => location.reload());
+    dateService.subscribe((isNewDay) => {
+      if (
+        isNewDay &&
+        !this.#element
+          .querySelector("#refreshButton")
+          .classList.contains("hidden")
+      ) {
+        location.reload()
+      }
+    });
   }
   onChange(event) {
     this.#mostRecentEvent = event;
@@ -82,7 +92,7 @@ export default class GameView {
     resultDiv.append(`${result ? "✓" : "✗"}`);
     return container;
   }
-  
+
   #createImage({ src, alt }) {
     const img = document.createElement("img");
     img.src = src;
