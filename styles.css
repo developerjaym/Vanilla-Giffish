@@ -11,7 +11,7 @@
 
   --happy-bg: #88a73f;
   --happy-fg: black;
-  --sad-bg: #A73F54;
+  --sad-bg: #a73f54;
   --sad-fg: white;
 
   --max-main-width: 80rem;
@@ -47,6 +47,11 @@ body {
 .game__header .button--icon {
   font-size: 36px;
   font-weight: 900;
+}
+
+.header__options {
+  display: flex;
+  column-gap: var(--narrow);
 }
 
 .header__text {
@@ -94,8 +99,6 @@ body {
 
   max-width: var(--max-main-width);
 }
-
-
 
 section {
   padding: var(--narrow);
@@ -146,6 +149,8 @@ form label {
   border-radius: var(--radius);
   border-width: 1px;
   padding: var(--narrow);
+  width: 15rem;
+  max-width: 100vw;
 }
 
 .dialog__container {
@@ -180,15 +185,18 @@ form label {
   margin-top: var(--narrow);
 }
 
-#copyableResults {
-  height: 6rem;
-  width: 15rem;
-  border: none;
-  padding: var(--wide);
+.result__key {
+  font-weight: bold;
 }
 
-#resultsAnswer {
+.result__value {
   font-style: italic;
+}
+
+#copyableResults {
+  height: 6rem;
+  border: none;
+  padding: var(--wide);
 }
 
 #refreshButton {
@@ -217,7 +225,6 @@ form label {
   justify-content: center;
   align-items: center;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .spin {

@@ -26,6 +26,7 @@ export default class ResultsDialog {
         this.#convertResultsToString(this.#results);
       if(gameData.isDone) {
           this.#element.querySelector("#resultsAnswer").textContent = gameData.movie.title
+          this.#element.querySelector("#resultsExplanation").textContent = gameData.movie.explanation
       }
       this.#element.showModal();
     }
