@@ -4,8 +4,7 @@ const cacheName = "Giffish";
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(cacheName).then((cache) => {
-      // Our application only has two files here index.html and manifest.json
-      // but you can add more such as style.css as your app grows
+      // You can add more files as your app grows
       return cache.addAll(["./", "./index.html", "./manifest.json", "./icons/logo.png", "./styles.css"]);
     })
   );
