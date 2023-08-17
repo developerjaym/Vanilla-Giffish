@@ -77,9 +77,9 @@ export class LocalDate {
 
   millisecondsUntilNextDate() {
     const todayAsDate = new Date();
-    const tomorrowDate =  new Date(`${todayAsDate.getFullYear()}-${LocalDate.pad(
+    const tomorrowDate =  new Date(`${todayAsDate.getFullYear()}-${pad(
       todayAsDate.getMonth() + 1
-    )}-${LocalDate.pad(todayAsDate.getDate() + 1)}T00:00:00.000`)
+    )}-${pad(todayAsDate.getDate() + 1)}T00:00:00.000`)
     return tomorrowDate.getTime() - todayAsDate.getTime()
   }
 
@@ -102,9 +102,9 @@ export class LocalDate {
   }
 
   toISOString() {
-    return `${this.#jsDate.getUTCFullYear()}-${LocalDate.pad(
+    return `${this.#jsDate.getUTCFullYear()}-${pad(
       this.#jsDate.getUTCMonth() + 1
-    )}-${LocalDate.pad(this.#jsDate.getUTCDate())}`;
+    )}-${pad(this.#jsDate.getUTCDate())}`;
   }
 
   toLocaleString() {
@@ -150,13 +150,7 @@ export class LocalDate {
     return this.#jsDate != "Invalid Date";
   }
 
-  static pad(number) {
-    const numberString = String(number);
-    if (numberString.length < 2) {
-      return `0${number}`;
-    }
-    return numberString;
-  }
+
 
   static today() {
     const todayAsDate = new Date();
@@ -164,9 +158,9 @@ export class LocalDate {
     // If I did new LocalDate(new Date()), then the LocalDate would be whatever 'today' is in England
     LocalDate.#isInternalConstructing = true;
     const instance = LocalDate.fromISOString(
-      `${todayAsDate.getFullYear()}-${LocalDate.pad(
+      `${todayAsDate.getFullYear()}-${pad(
         todayAsDate.getMonth() + 1
-      )}-${LocalDate.pad(todayAsDate.getDate())}`
+      )}-${pad(todayAsDate.getDate())}`
     );
     LocalDate.#isInternalConstructing = false;
     return instance;
@@ -178,6 +172,14 @@ export class LocalDate {
     LocalDate.#isInternalConstructing = false;
     return instance;
   }
+}
+
+export function pad(number){
+  const numberString = String(number);
+  if (numberString.length < 2) {
+    return `0${number}`;
+  }
+  return numberString;
 }
 
 class LocalDateFormatter {

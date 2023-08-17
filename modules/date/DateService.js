@@ -1,4 +1,4 @@
-import { LocalDate } from "./LocalDate.js";
+import { LocalDate, pad } from "./LocalDate.js";
 import { Observable } from "./../utility/Observable.js"
 
 export default class DateService extends Observable {
@@ -33,6 +33,6 @@ export default class DateService extends Observable {
         const seconds = ms / 1000;
         const hours = seconds / 3600
         const minutes = (hours - Math.floor(hours)) * 60
-        return `${LocalDate.pad(Math.floor(hours))}:${LocalDate.pad(Math.floor(minutes))}`
+        return `${pad(Math.floor(hours))}:${pad(Math.floor(minutes))}`
       }
 }
