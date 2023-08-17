@@ -199,8 +199,9 @@ form label {
   padding: var(--wide);
 }
 
-#refreshButton {
-  width: 100%;
+#countdownTimer {
+  text-align: center;
+  font-size: x-large;
 }
 
 .hidden {

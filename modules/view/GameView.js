@@ -36,20 +36,22 @@ export default class GameView {
       .addEventListener("click", () =>
         this.#element.querySelector("#about").showModal()
       );
-    this.#element
-      .querySelector("#refreshButton")
-      .addEventListener("click", () => location.reload());
-    dateService.subscribe((isNewDay) => {
+    dateService.subscribe(({countdown, isNewDay}) => {
       if (
         isNewDay &&
         !this.#element
-          .querySelector("#refreshButton")
+          .querySelector("#countdownTimer")
           .classList.contains("hidden")
       ) {
         location.reload()
       }
+      else {
+        this.#element
+          .querySelector("#countdownTimerText").textContent = countdown
+      }
     });
   }
+  
   onChange(event) {
     this.#mostRecentEvent = event;
     this.#displayGuesses(event.data.guesses);
@@ -65,7 +67,7 @@ export default class GameView {
       case GameEventType.END:
         this.#resultsDialog.show(event.data);
         this.#element
-          .querySelector("#refreshButton")
+          .querySelector("#countdownTimer")
           .classList.remove("hidden");
         break;
     }

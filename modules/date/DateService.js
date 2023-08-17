@@ -21,10 +21,18 @@ export default class DateService extends Observable {
         let lastDate = LocalDate.today()
         setInterval(() => {
             const today = LocalDate.today()
-            if(today.isGreaterThan(lastDate)) {
-                super.notifyAll(true)
+            const isNewDay  = today.isGreaterThan(lastDate)
+            const countdown = this.#convertMillisecondsToString(lastDate.millisecondsUntilNextDate())
+            super.notifyAll({countdown, isNewDay })
+            if(isNewDay) {
                 lastDate = today
             }
-        }, 60_000)
+        }, 100)
     }
+    #convertMillisecondsToString(ms) {
+        const seconds = ms / 1000;
+        const hours = seconds / 3600
+        const minutes = (hours - Math.floor(hours)) * 60
+        return `${LocalDate.pad(Math.floor(hours))}:${LocalDate.pad(Math.floor(minutes))}`
+      }
 }
