@@ -1,4 +1,5 @@
 const cacheName = "Giffish";
+const appVersion = "0.0.1";
 
 // Cache all the files to make a PWA
 self.addEventListener("install", (e) => {
@@ -10,16 +11,26 @@ self.addEventListener("install", (e) => {
   );
 });
 
-// Our service worker will intercept all fetch requests
-// and check if we have cached the file
-// if so it will serve the cached file
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches
-      .open(cacheName)
-      .then((cache) => cache.match(event.request, { ignoreSearch: true }))
-      .then((response) => {
-        return response || fetch(event.request);
-      })
-  );
+// from Microsoft
+self.addEventListener('fetch', event => {
+  event.respondWith((async () => {
+    const cache = await caches.open(cacheName);
+
+    // Get the resource from the cache.
+    const cachedResponse = await cache.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    } else {
+        try {
+          // If the resource was not in the cache, try the network.
+          const fetchResponse = await fetch(event.request);
+
+          // Save the resource in the cache and return it.
+          cache.put(event.request, fetchResponse.clone());
+          return fetchResponse;
+        } catch (e) {
+          // The network failed.
+        }
+    }
+  })());
 });

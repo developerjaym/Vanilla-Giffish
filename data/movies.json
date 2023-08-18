@@ -137,15 +137,19 @@
   },
   {
     "title": "Titanic",
-    "explanation": "titan (a scene from Clash of the Titans) + ic (icky)",
+    "explanation": "tight (tight pants)+ tan + Nick",
     "gifs": [
       {
-        "src": "https://media.giphy.com/media/Y9zsPkuTlEcWk/giphy.gif",
-        "alt": "Liam Neeson as Zeus saying, 'Release the Kraken'"
+        "src": "https://media.giphy.com/media/dZXvZjJdEOZTYbPcE2/giphy.gif",
+        "alt": "Ross from Friends trying to pull up leather pants that are just too tight"
       },
       {
-        "src": "https://media.giphy.com/media/8IXGlKRG5lnpY5EYgx/giphy.gif",
-        "alt": "A disgusted talking head saying he feels icky inside"
+        "src": "https://media.giphy.com/media/S8CKYteUdGMYBkI9zR/giphy.gif",
+        "alt": "Ross from Friends looking very tan on half his body"
+      },
+      {
+        "src": "https://media.giphy.com/media/MXj3oGRiSipgyFocsm/giphy.gif",
+        "alt": "A dancing yellow minion named Nick"
       }
     ]
   },
