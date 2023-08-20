@@ -63,6 +63,25 @@ body {
   fill: fieldtext;
 }
 
+@media (prefers-color-scheme: dark) {
+  .button--icon svg path {
+    fill: white;
+  }
+  .button--icon {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .button--icon svg path {
+    fill: black;
+  }
+  .button--icon {
+    color: black;
+  }
+}
+
+
 #gifs {
   display: flex;
   justify-content: center;

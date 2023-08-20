@@ -43,11 +43,11 @@ export default class ShareServiceFactory {
         this.#copyService = new CopyService(url)
     }
     getShareService() {
-        // if (!navigator.share) {
+        if (!navigator.share) {
             return this.#copyService
-        // } else {
-            // return this.#socialShareService
-        // }
+        } else {
+            return this.#socialShareService
+        }
     }
 }
 
