@@ -1,5 +1,5 @@
 const cacheName = "Giffish";
-const appVersion = "0.0.5";
+const appVersion = "0.0.6";
 
 // Cache all the files to make a PWA
 self.addEventListener("install", (e) => {
