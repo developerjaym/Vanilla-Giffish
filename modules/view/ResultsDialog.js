@@ -1,9 +1,10 @@
+import { ToastMoods } from "../toast/Toast.js";
 import injector from "../utility/Dependencies.js";
 
 export default class ResultsDialog {
   #element;
   #results;
-  constructor(element, shareService = injector.shareService) {
+  constructor(element, shareService = injector.shareService, toastService = injector.toastService) {
     this.#results = {};
 
     this.#element = element;
@@ -14,7 +15,7 @@ export default class ResultsDialog {
       .querySelector("#resultsCopyButton").textContent = shareService.description
     this.#element
       .querySelector("#resultsCopyButton")
-      .addEventListener("click", () => shareService.share("Giffish Results", this.#convertResultsToString(this.#results, false)));
+      .addEventListener("click", () => shareService.share("Giffish Results", this.#convertResultsToString(this.#results, false), (message) => toastService.push(message, ToastMoods.HAPPY), (error) => toastService.push(error, ToastMoods.SAD)));
   }
   show(gameData) {
     this.#results = gameData;

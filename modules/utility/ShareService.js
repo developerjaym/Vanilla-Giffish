@@ -6,7 +6,7 @@ class BaseShareService {
     constructor(url) {
         this.#url = url
     }
-    share(title, text, onSuccess = () => {}, onFailure = (error) => {}) {
+    share(title, text, onSuccess = (message) => {}, onFailure = (error) => {}) {
         throw Error("Not implemented")
       }
       get description() {
@@ -18,7 +18,7 @@ class BaseShareService {
 }
 
 class CopyService extends BaseShareService {
-    share(title, text, onSuccess = () => {}, onFailure = (error) => {}) {
+    share(title, text, onSuccess = (message) => {}, onFailure = (error) => {}) {
         clipboardCopier(`${text}\n${this.url}`, onSuccess, onFailure)
       }
       get description() {
@@ -27,7 +27,7 @@ class CopyService extends BaseShareService {
 }
 
 class SocialShareService {
-    share(title, text, onSuccess = () => {}, onFailure = (error) => {}) {
+    share(title, text, onSuccess = (message) => {}, onFailure = (error) => {}) {
        share("Giffish Results", text, onSuccess, onFailure)
       }
       get description() {

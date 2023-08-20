@@ -1,7 +1,7 @@
 export default function clipboardCopier(shareString, onSuccess, onFailure) {
     if (navigator && navigator.clipboard.writeText(shareString)) {
-      onSuccess();
+      onSuccess("Successfully Copied");
     } else {
-      onFailure();
+      onFailure("ERROR: Failed to Copy");
     }
   }

@@ -3,7 +3,7 @@ export default function share(
   title,
   text,
   url,
-  onSuccess = () => {},
+  onSuccess = (message) => {},
   onFailure = (error) => {}
 ) {
   if (!navigator.share) {
@@ -11,5 +11,5 @@ export default function share(
     return;
   }
 
-  navigator.share({ title, text, url }).then(onSuccess).catch(onFailure);
+  navigator.share({ title, text, url }).then(() => onSuccess("Successfully Shared")).catch(onFailure);
 }

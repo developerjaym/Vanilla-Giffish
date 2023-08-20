@@ -226,6 +226,21 @@ form label {
 .hidden {
   display: none;
 }
+.toast {
+  width: 100%;
+  border: none;
+  filter: drop-shadow(2px 4px 6px black);
+  text-align: center;
+}
+
+.toast--happy {
+  background-color: var(--happy-bg);
+  color: var(--happy-fg);
+}
+.toast--sad {
+  background-color: var(--sad-bg);
+  color: var(--sad-fg);
+}
 
 #loading {
   height: 100vh;
